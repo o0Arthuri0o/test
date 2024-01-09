@@ -10,9 +10,9 @@ const jwt = require('jsonwebtoken')
 app.use(cors())
 app.use(express.json())
 
-app.use(function (_, response) {
-    response.send("<h2>Hello</h2>");
-});
+// app.use(function (_, response) {
+//     response.send("<h2>Hello</h2>");
+// });
 
 //get all todos
 app.get('/todos/:userEmail', async(req, res) => {
